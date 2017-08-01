@@ -66,7 +66,7 @@ body{
 	margin-bottom: .5em;
 }
 
-.listaDeTarefas li span{
+.listaDeTarefas li .nomeTarefa{
 	flex-grow: 2;
 }
 
@@ -75,12 +75,33 @@ body{
 	color: #fff;	
 }
 
-.listaDeTarefas li span,
+.listaDeTarefas li .tarefaFeita{
+	background-color: #4CAF50;
+}
+
+.listaDeTarefas li .nomeTarefa,
 .listaDeTarefas li a{
 	box-sizing: border-box;
 	padding: .5em;
 }
 
+.mensagemErroForm{
+	position: relative;
+	top: .5em;
+	color: #F44336;
+}
+
+.escondeMensagem{
+	opacity: 0;
+}
+
+.tarefaCompleta{
+	text-decoration: line-through;
+}
+
+.listaDeTarefas li .tarefaCompletaBotao{
+	background-color: #FFEB3B;
+}
 
 footer{
 	text-align: center;

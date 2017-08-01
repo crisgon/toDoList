@@ -15,22 +15,42 @@
 		</header>
 		<section class="tarefas">
 			<form action="" class="novaTarefa">
-					<label for="tarefaNome">Adicionar Tarefa</label><input type="text" name="tarefaNome" class="tarefaNome" placeholder="Nome da tarefa">
+					<label for="tarefaNome">Adicionar Tarefa</label>
+					<input type="text" name="tarefaNome" class="tarefaNome" placeholder="Nome da tarefa" required="required" >
 					<input type="button" class="botaoAddTarefa" value="Adicionar">
 			</form>
+			<span class="mensagemErroForm escondeMensagem"></span>
 			<h2>Lista de Tarefas</h2>
 			<ul class="listaDeTarefas">
-				<li class="item-tarefa"><span>Ir ao banco</span><a href="" class="removerTarefa"><i class="fa fa-trash" title="Deletar"></i></a></li>
-				<li class="item-tarefa"><span>Caminhar</span><a href="" class="removerTarefa"><i class="fa fa-trash" title="Deletar"></i></a></li>
-				<li class="item-tarefa"><span>Marcar dentista</span><a href="" class="removerTarefa"><i class="fa fa-trash" title="Deletar"></i></a></li>
-				<li class="item-tarefa"><span>Tomar o suplemento</span><a href="" class="removerTarefa"><i class="fa fa-trash" title="Deletar"></i></a></li>
-				<li class="item-tarefa"><span>Fazer caminhada</span><a href="" class="removerTarefa"><i class="fa fa-trash" title="Deletar"></i></a></li>
+				<li class="item-tarefa">
+					<span class="nomeTarefa">Ir ao banco</span>
+					<a href="" class="tarefaFeita"><i class="fa fa-check" aria-hidden="true"></i></a>
+					<a href="" class="removerTarefa"><i class="fa fa-trash" title="Deletar"></i></a>
+					</li>
+				<li class="item-tarefa">
+					<span class="nomeTarefa">Caminhar</span>
+					<a href="" class="tarefaFeita"><i class="fa fa-check" aria-hidden="true"></i></a>
+					<a href="" class="removerTarefa"><i class="fa fa-trash" title="Deletar"></i></a></li>
+				<li class="item-tarefa">
+					<span class="nomeTarefa">Marcar dentista</span>
+					<a href="" class="tarefaFeita"><i class="fa fa-check" aria-hidden="true"></i></a>
+					<a href="" class="removerTarefa"><i class="fa fa-trash" title="Deletar"></i></a></li>
+				<li class="item-tarefa">
+					<span class="nomeTarefa">Tomar o suplemento</span>
+					<a href="" class="tarefaFeita"><i class="fa fa-check" aria-hidden="true"></i></a>
+					<a href="" class="removerTarefa"><i class="fa fa-trash" title="Deletar"></i></a></li>
+				<li class="item-tarefa">
+					<span class="nomeTarefa">Fazer caminhada</span>
+					<a href="" class="tarefaFeita"><i class="fa fa-check" aria-hidden="true"></i></a>
+					<a href="" class="removerTarefa"><i class="fa fa-trash" title="Deletar"></i></a></li>
 			</ul>
 		</section>
 		<footer>Desenvolvido por Cristiano Gonçalves</footer>
 	</main>
 	<script src="https://use.fontawesome.com/3a8d059f5c.js"></script>
+	<script src="js/validaAddTarefa.js"></script>
 	<script src="js/adicionaTarefa.js"></script>
+	<script src="js/tarefaCompleta.js"></script>
 	<script src="js/removeTarefa.js"></script>
 </body>
 </html>
