@@ -32,5 +32,5 @@ function montaLi(){
 	novoLinkDelete.appendChild(novoIconeDelete);//Coloca o icone dentro o link a	
 	novoLiTarefa.appendChild(novoSpanTarefa); //Coloca o span como filho do li
 	novoLiTarefa.appendChild(novoLinkDelete);//Coloca o a como filho do li
-	listaDeTarefas.appendChild(novoLiTarefa);//Coloca o li como filho do ul
+	listaDeTarefas.insertBefore(novoLiTarefa, listaDeTarefas.childNodes[0]); //Coloca o li como primeiro filho do ul
 }
