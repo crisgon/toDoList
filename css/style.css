@@ -1,0 +1,93 @@
+body{
+	font-family: 'Ubuntu', sans-serif;
+	background-color: #212121;
+}
+
+.container{
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	color: #fff;
+}
+
+.cabecalho{
+	text-align: center;
+}
+
+.tarefas,
+.listaDeTarefas{
+	font-size: 1.125em;
+}
+
+.tarefas .novaTarefa{
+	display: flex;
+	flex-direction: column;
+}
+
+.tarefas .novaTarefa label{
+	background-color: #9E9E9E;
+}
+
+.tarefaNome{
+	flex-grow: 2
+}
+
+.botaoAddTarefa{
+	background-color: #4CAF50;
+	color: #fff;
+	border: none;
+	box-sizing: border-box;
+	padding: .5em;
+}
+
+.tarefas,
+.tarefas .novaTarefa label,
+.tarefaNome{
+	box-sizing: border-box;
+	padding: .5em;
+}
+
+.listaDeTarefas{
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	justify-content: space-between;
+	padding: 0;
+}
+
+.listaDeTarefas li{
+	display: flex;
+	flex-direction: row;
+	background-color: #fff;
+	color: #212121;
+	box-sizing: border-box;
+	
+	margin-bottom: .5em;
+}
+
+.listaDeTarefas li span{
+	flex-grow: 2;
+}
+
+.listaDeTarefas li a{
+	background-color: #F44336;
+	color: #fff;	
+}
+
+.listaDeTarefas li span,
+.listaDeTarefas li a{
+	box-sizing: border-box;
+	padding: .5em;
+}
+
+
+footer{
+	text-align: center;
+}
+
+@media(min-width: 700px){
+	.tarefas .novaTarefa{
+		flex-direction: row;
+	}
+}

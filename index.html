@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>To Do Lis</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<main class="container">
+		<header class="cabecalho">
+			<h1><i class="fa fa-tasks" aria-hidden="true"></i> To Do</h1>
+		</header>
+		<section class="tarefas">
+			<form action="" class="novaTarefa">
+					<label for="tarefaNome">Adicionar Tarefa</label><input type="text" name="tarefaNome" class="tarefaNome" placeholder="Nome da tarefa">
+					<input type="button" class="botaoAddTarefa" value="Adicionar">
+			</form>
+			<h2>Lista de Tarefas</h2>
+			<ul class="listaDeTarefas">
+				<li><span>Ir ao banco</span><a href=""><i class="fa fa-trash" title="Deletar"></i></a></li>
+				<li><span>Caminhar</span><a href=""><i class="fa fa-trash" title="Deletar"></i></a></li>
+				<li><span>Marcar dentista</span><a href=""><i class="fa fa-trash" title="Deletar"></i></a></li>
+				<li><span>Tomar o suplemento</span><a href=""><i class="fa fa-trash" title="Deletar"></i></a></li>
+				<li><span>Fazer caminhada</span><a href=""><i class="fa fa-trash" title="Deletar"></i></a></li>
+			</ul>
+		</section>
+		<footer>Desenvolvido por Cristiano Gonçalves</footer>
+	</main>
+	<script src="https://use.fontawesome.com/3a8d059f5c.js"></script>
+	<script src="js/adcionaTarefa.js"></script>
+</body>
+</html>
