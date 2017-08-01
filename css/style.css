@@ -56,21 +56,23 @@ body{
 	padding: 0;
 }
 
-.listaDeTarefas li{
+.listaDeTarefas li,
+.tarefasConluidas li{
 	display: flex;
 	flex-direction: row;
 	background-color: #fff;
 	color: #212121;
 	box-sizing: border-box;
-	
 	margin-bottom: .5em;
 }
 
-.listaDeTarefas li .nomeTarefa{
+.listaDeTarefas li .nomeTarefa,
+.tarefasConluidas li .nomeTarefa{
 	flex-grow: 2;
 }
 
-.listaDeTarefas li a{
+.listaDeTarefas li a,
+.tarefasConluidas li a{
 	background-color: #F44336;
 	color: #fff;	
 }
@@ -79,8 +81,14 @@ body{
 	background-color: #4CAF50;
 }
 
+.tarefasConluidas li .tarefaFeita{
+	background-color: #FFEB3B;
+}
+
 .listaDeTarefas li .nomeTarefa,
-.listaDeTarefas li a{
+.listaDeTarefas li a,
+.tarefasConluidas li .nomeTarefa,
+.tarefasConluidas li a{
 	box-sizing: border-box;
 	padding: .5em;
 }
@@ -99,9 +107,6 @@ body{
 	text-decoration: line-through;
 }
 
-.listaDeTarefas li .tarefaCompletaBotao{
-	background-color: #FFEB3B;
-}
 
 footer{
 	text-align: center;

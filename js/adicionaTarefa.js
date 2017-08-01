@@ -7,7 +7,10 @@ var liItemTarefa = document.querySelector(".item-tarefa");
 document.onchange="alert()";
 botaoAddTarefa.addEventListener("click", function(event){
 	event.preventDefault();
-		addTarefa();		
+				
+		if(!validaCampoForm(campoTarefa)){
+			addTarefa();
+		}
 });
 
 
