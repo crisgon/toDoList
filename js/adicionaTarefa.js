@@ -2,7 +2,6 @@ var botaoAddTarefa = document.querySelector(".botaoAddTarefa");
 var tarefaNome = document.querySelector(".tarefaNome");
 var listaDeTarefas = document.querySelector(".listaDeTarefas");
 var liItemTarefa = document.querySelector(".item-tarefa");
-console.log(listaDeTarefas);
 
 botaoAddTarefa.addEventListener("click", function(event){
 	event.preventDefault();
@@ -17,7 +16,7 @@ botaoAddTarefa.addEventListener("click", function(event){
 function criaElementos(){
 	novoSpanTarefa = document.createElement("span"); //Cria o Span que recebe o nome da tarefa
 	novoLinkDelete = document.createElement("a");//Cria a para deletar
-	novoLinkDelete.setAttribute("href", "#"); //Add atributo href ao <a>
+	novoLinkDelete.setAttribute("href", ""); //Add atributo href ao <a>
 	novoIconeDelete = document.createElement("i");//Cria novo i para que contem o icone de deletar
 	novoIconeDelete.setAttribute("title", "Deletar"); //Add o atributo title ao <i>
 	novoLiTarefa = document.createElement("li"); //Cria o Li que armazena a tarefa
