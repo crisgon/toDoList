@@ -1,7 +1,7 @@
 var campoTarefa = document.querySelector(".tarefaNome");
 var mensagemErroForm = document.querySelector(".mensagemErroForm");
 
-console.log(campoTarefa);
+
 
 
 
