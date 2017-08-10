@@ -11,7 +11,7 @@
 <body>
 	<main class="container">
 		<header class="cabecalho">
-			<h1><i class="fa fa-tasks" aria-hidden="true"></i> para fazer</h1>
+			<h1><i class="fa fa-tasks" aria-hidden="true"></i> To Do</h1>
 		</header>
 		<section class="tarefas">
 			<form action="" class="novaTarefa">
@@ -21,12 +21,14 @@
 			</form>
 			<span class="mensagemErroForm escondeMensagem"></span>
 			<h2>Lista de Tarefas</h2>
-			<ul class="listaDeTarefas">
+			<ul class="listaDeTarefas" id="lista">
+				
 				<li class="item-tarefa">
 					<span class="nomeTarefa">Ir ao banco</span>
 					<a href="" class="tarefaFeita"><i class="fa fa-check" aria-hidden="true"></i></a>
 					<a href="" class="removerTarefa"><i class="fa fa-trash" title="Deletar"></i></a>
-					</li>
+				</li>
+				
 				<li class="item-tarefa">
 					<span class="nomeTarefa">Caminhar</span>
 					<a href="" class="tarefaFeita"><i class="fa fa-check" aria-hidden="true"></i></a>
@@ -53,6 +55,7 @@
 		<footer>Desenvolvido por Cristiano Gonçalves</footer>
 	</main>
 	<script src="https://use.fontawesome.com/3a8d059f5c.js"></script>
+	<script src="public/jquery.min.js"></script>
 	<script src="js/validaAddTarefa.js"></script>
 	<script src="js/adicionaTarefa.js"></script>
 	<script src="js/tarefaCompleta.js"></script>
